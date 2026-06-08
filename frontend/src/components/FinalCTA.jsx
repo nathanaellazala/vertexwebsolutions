@@ -106,7 +106,7 @@ export const FinalCTA = () => {
 
         <Reveal delay={0.2}>
           <p className="mt-5 text-[12px] text-white/40 font-mono-label">
-            NO PRICES LISTED ONLINE · CALL TO DISCUSS THE BEST SETUP FOR YOUR BUSINESS
+            CALL TO DISCUSS THE BEST SETUP FOR YOUR BUSINESS · CUSTOM PACKAGES ON REQUEST
           </p>
         </Reveal>
       </div>

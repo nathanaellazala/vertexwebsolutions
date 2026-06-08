@@ -76,7 +76,7 @@ export const PackageDeal = () => {
               <Phone size={15} strokeWidth={2.5} />
               Call 305-469-3585 to discuss your custom package
             </a>
-            <p className="mt-4 text-[11px] text-white/30 font-mono-label">NO PRICES ONLINE · CALL TO DISCUSS YOUR SETUP</p>
+            <p className="mt-4 text-[11px] text-white/30 font-mono-label">CALL TO DISCUSS YOUR CUSTOM SETUP</p>
           </div>
         </Reveal>
       </div>

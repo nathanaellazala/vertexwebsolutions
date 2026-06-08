@@ -20,7 +20,7 @@ const OPTIONS = [
     id: "social",
     icon: Megaphone,
     label: "I need better social media",
-    detail: "We plan and produce branded content, before-and-after posts, and campaign ideas that keep your business visible to local customers.",
+    detail: "We craft and produce branded content, before-and-after posts, and campaign ideas that keep your business visible to local customers.",
   },
   {
     id: "full",
@@ -113,7 +113,7 @@ export const InteractiveDemo = () => {
                   Tap to call now <ArrowRight size={14} />
                 </a>
                 <p className="mt-4 text-[11px] text-white/35 font-mono-label">
-                  NO PRICES ONLINE · CALL TO DISCUSS YOUR SETUP
+                  CALL TO DISCUSS YOUR CUSTOM SETUP
                 </p>
               </div>
             </div>
