@@ -1,0 +1,140 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 4 (Swiss/High-Contrast) + Archetype 5 (Luxury Hybrid)",
+  "brand": {
+    "name": "Vertex Web Solutions",
+    "logo_concept": "Generated text+icon logo with a stylized 'V' / triangular vertex mark using pure SVG paths.",
+    "primary_cta_phone": "tel:3054693585"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Clash Display, sans-serif",
+      "weights": ["500", "600"],
+      "tracking": "tracking-tight",
+      "css_import": "@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600&display=swap');"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["400", "500", "600"],
+      "css_import": "@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');"
+    },
+    "mono_labels": {
+      "font_family": "JetBrains Mono, monospace",
+      "usage": "Overlines, tech stats, developer-like data points",
+      "tracking": "tracking-[0.2em]",
+      "css_import": "@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');"
+    }
+  },
+  "color_palette": {
+    "background": {
+      "base": "#05050A",
+      "surface": "#0D0E15",
+      "surface_raised": "#13151F",
+      "glass": "rgba(13, 14, 21, 0.7)"
+    },
+    "accents": {
+      "primary": "#00E5FF",
+      "secondary": "#0070F3",
+      "tertiary": "#1E202B"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "muted": "#71717A",
+      "accent": "#00E5FF"
+    },
+    "borders": {
+      "subtle": "rgba(255, 255, 255, 0.08)",
+      "glow": "rgba(0, 229, 255, 0.25)"
+    }
+  },
+  "design_system": {
+    "spacing": "Generous spacing. p-8 to p-12 inside bento grids. py-24 to py-32 for main sections.",
+    "layout": "Strict grid-based bento layouts. Mobile-first stacking to 3 or 4 columns on desktop.",
+    "surfaces": "Crystal Glassmorphism: Use backdrop-blur-xl bg-[#0D0E15]/60 with 1px inner top border (box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.05)).",
+    "borders": "1px solid borders for all structural elements. Never use muddy gray drop shadows. Rely on background contrasts and thin glowing borders for focus states.",
+    "cursor": "Implement a custom cursor glow effect (a div following the mouse with a radial gradient blur) for desktop users."
+  },
+  "animations": {
+    "scroll": "MANDATORY: Smooth scrolling using Framer Motion or pure CSS smooth-scroll on html.",
+    "micro_interactions": "Buttons and cards scale up to scale-105 on hover. Active elements pulse subtly.",
+    "backgrounds": "Implement a pure CSS digital grid (background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px)...) overlaying a deep navy canvas.",
+    "reveals": "Use framer-motion 'whileInView' to create staggered fade-up effects (y: 20, opacity: 0 to y: 0, opacity: 1) on all sections."
+  },
+  "components": {
+    "buttons": {
+      "primary": "Solid #FFFFFF background with #05050A text. Font weight 600. Hover: scale 0.98 and drop-shadow-cyan glow.",
+      "secondary": "Glass outline. bg-transparent border border-white/10 text-white hover:bg-white/5. Transition-all duration-300."
+    },
+    "cards": {
+      "bento": "Rounded-xl or 2xl (max), bg-[#0D0E15] border border-white/5. On hover: border-cyan-500/50 and add a soft cyan inner-glow."
+    }
+  },
+  "media": {
+    "images_allowed": false,
+    "strategy": "PURE_CODE",
+    "icons_library": "lucide-react",
+    "instructions_to_main_agent": "CRITICAL: NO PHOTOS. NO EXTERNAL IMAGES. DO NOT load any image assets. You MUST build visual assets (dashboards, mockups, graphs, call waveforms) using raw HTML/CSS divs, Framer Motion, SVGs, and Lucide icons."
+  },
+  "testing": {
+    "data_testid_rule": "Every interactive and key informational element MUST include a data-testid attribute in kebab-case."
+  },
+  "sections_breakdown": [
+    {
+      "id": "navbar",
+      "description": "Sticky Glass Navbar (z-50, backdrop-blur-xl bg-[#05050A]/70). Pure SVG 'V' logo + Vertex text. Right-aligned Phone CTA button (tel:3054693585). Mobile menu with slide-in."
+    },
+    {
+      "id": "hero",
+      "description": "Animated Hero. H1 in Clash Display text-5xl md:text-7xl. Layout: 2 columns on desktop. Right column contains a Floating AI Dashboard Visualization built with pure CSS/Framer Motion (mock UI cards, floating stat bars, glowing nodes). Particles/grid background."
+    },
+    {
+      "id": "problem_statement",
+      "description": "3 Problem Cards: Missed calls, Weak online presence, Inconsistent marketing. 3-column bento grid. Accents of subtle red/amber danger glows."
+    },
+    {
+      "id": "services_overview",
+      "description": "3 Service Cards with glowing Lucide icons: AI Voice, Website Building, Social Media. Layout: Bento grid layout."
+    },
+    {
+      "id": "package_deal_flow",
+      "description": "System Flow Diagram showcasing the 'Vertex Ecosystem'. Built with pure CSS connecting lines and SVG animated glowing dots tracking along the lines between service nodes."
+    },
+    {
+      "id": "ai_receptionist_deepdive",
+      "description": "Animated call interface. Render a phone frame purely in CSS. Show an audio waveform (animated div bars scaling randomly), transcript bubbles appearing dynamically, and a 'lead captured' summary card."
+    },
+    {
+      "id": "website_deepdive",
+      "description": "Website Building Showcase. Animated 3D mockup built with pure CSS transforms (perspective, rotateX, rotateY) showing a floating wireframe."
+    },
+    {
+      "id": "social_media_deepdive",
+      "description": "Animated post feed mockup. A column of skeleton UI post cards scrolling vertically in an infinite loop using Framer Motion."
+    },
+    {
+      "id": "industries_grid",
+      "description": "18 cards with Lucide icons + hover glow. Dense grid layout (grid-cols-2 md:grid-cols-3 lg:grid-cols-6). Gap-4."
+    },
+    {
+      "id": "why_vertex",
+      "description": "4 Cards detailing Vertex advantages. Large JetBrains Mono numbers overlaid as background watermarks in the cards."
+    },
+    {
+      "id": "testimonials",
+      "description": "CSS scrolling marquee (react-fast-marquee or CSS keyframes) of text-only testimonials with SVG star ratings."
+    },
+    {
+      "id": "interactive_demo",
+      "description": "4 option cards simulating the receptionist routing tree. Clicking an option highlights the path."
+    },
+    {
+      "id": "final_cta",
+      "description": "Massive text CTA 'Upgrade Your Business' with a triangular network animation background. Huge tap-to-call button."
+    },
+    {
+      "id": "footer",
+      "description": "Minimal luxury footer. Grid links, legal text, stylized brand mark."
+    }
+  ]
+}
