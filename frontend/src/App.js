@@ -1,40 +1,41 @@
-import { useEffect } from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-import { HOME } from "@/constants/testIds";
+import CursorGlow from "./components/CursorGlow";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import ProblemSection from "./components/ProblemSection";
+import ServicesOverview from "./components/ServicesOverview";
+import PackageDeal from "./components/PackageDeal";
+import AIReceptionistDeepDive from "./components/AIReceptionistDeepDive";
+import WebsiteDeepDive from "./components/WebsiteDeepDive";
+import SocialMediaDeepDive from "./components/SocialMediaDeepDive";
+import IndustriesGrid from "./components/IndustriesGrid";
+import WhyVertex from "./components/WhyVertex";
+import Testimonials from "./components/Testimonials";
+import InteractiveDemo from "./components/InteractiveDemo";
+import FinalCTA from "./components/FinalCTA";
+import Footer from "./components/Footer";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
+const Landing = () => {
   return (
-    <div>
-      <header className="App-header">
-        <a
-          data-testid={HOME.emergentLink}
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
+    <div className="relative" data-testid="landing-page">
+      <CursorGlow />
+      <Navbar />
+      <main>
+        <Hero />
+        <ProblemSection />
+        <ServicesOverview />
+        <PackageDeal />
+        <AIReceptionistDeepDive />
+        <WebsiteDeepDive />
+        <SocialMediaDeepDive />
+        <IndustriesGrid />
+        <WhyVertex />
+        <Testimonials />
+        <InteractiveDemo />
+        <FinalCTA />
+      </main>
+      <Footer />
     </div>
   );
 };
@@ -44,9 +45,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
+          <Route path="/" element={<Landing />} />
+          <Route path="*" element={<Landing />} />
         </Routes>
       </BrowserRouter>
     </div>
