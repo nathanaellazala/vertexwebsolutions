@@ -2,13 +2,14 @@ import { Phone } from "lucide-react";
 import VertexLogo from "./VertexLogo";
 
 const NAV = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "AI Receptionist", href: "#ai-receptionist" },
-  { label: "Websites", href: "#websites" },
-  { label: "Social Media", href: "#social-media" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "Services", href: "/#services" },
+  { label: "AI Receptionist", href: "/#ai-receptionist" },
+  { label: "Websites", href: "/#websites" },
+  { label: "Social Media", href: "/#social-media" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const LEGAL = [

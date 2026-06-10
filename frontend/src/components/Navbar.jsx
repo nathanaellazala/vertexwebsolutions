@@ -3,13 +3,14 @@ import { Phone, Menu, X } from "lucide-react";
 import VertexLogo from "./VertexLogo";
 
 const NAV_ITEMS = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "AI Receptionist", href: "#ai-receptionist" },
-  { label: "Websites", href: "#websites" },
-  { label: "Social Media", href: "#social-media" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "Services", href: "/#services" },
+  { label: "AI Receptionist", href: "/#ai-receptionist" },
+  { label: "Websites", href: "/#websites" },
+  { label: "Social Media", href: "/#social-media" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export const Navbar = () => {
@@ -38,7 +39,7 @@ export const Navbar = () => {
               : "border border-white/[0.04] bg-[#05050A]/30 backdrop-blur-md"
           }`}
         >
-          <a href="#home" data-testid="nav-logo-link" className="shrink-0">
+          <a href="/#home" data-testid="nav-logo-link" className="shrink-0">
             <VertexLogo size={26} />
           </a>
 

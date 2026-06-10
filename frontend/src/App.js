@@ -15,6 +15,7 @@ import Testimonials from "./components/Testimonials";
 import InteractiveDemo from "./components/InteractiveDemo";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
+import Portfolio from "./components/Portfolio";
 
 const Landing = () => {
   return (
@@ -46,6 +47,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="*" element={<Landing />} />
         </Routes>
       </BrowserRouter>
