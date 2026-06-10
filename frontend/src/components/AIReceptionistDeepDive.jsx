@@ -159,12 +159,12 @@ export const AIReceptionistDeepDive = () => {
                 Hear what it could sound like for your business &mdash;
               </p>
               <a
-                href="tel:3054693585"
+                href="tel:9549089619"
                 data-testid="ai-cta-call"
                 className="btn-primary inline-flex items-center gap-2 text-[13px]"
               >
                 <PhoneIncoming size={14} strokeWidth={2.5} />
-                Call 305-469-3585
+                Call 954-908-9619
               </a>
             </div>
           </Reveal>

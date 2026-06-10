@@ -98,12 +98,12 @@ export const SocialMediaDeepDive = () => {
           </Reveal>
 
           <a
-            href="tel:3054693585"
+            href="tel:9549089619"
             data-testid="social-cta-call"
             className="mt-9 btn-primary inline-flex items-center gap-2 text-[13px]"
           >
             <Phone size={14} strokeWidth={2.5} />
-            Call 305-469-3585 to map out your strategy
+            Call 954-908-9619 to map out your strategy
           </a>
         </div>
 

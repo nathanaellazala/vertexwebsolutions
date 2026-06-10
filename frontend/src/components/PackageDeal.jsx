@@ -69,12 +69,12 @@ export const PackageDeal = () => {
               more opportunities.
             </p>
             <a
-              href="tel:3054693585"
+              href="tel:9549089619"
               data-testid="package-cta-call"
               className="mt-8 inline-flex items-center gap-2 btn-primary text-[14px]"
             >
               <Phone size={15} strokeWidth={2.5} />
-              Call 305-469-3585 to discuss your custom package
+              Call 954-908-9619 to discuss your custom package
             </a>
             <p className="mt-4 text-[11px] text-white/30 font-mono-label">CALL TO DISCUSS YOUR CUSTOM SETUP</p>
           </div>

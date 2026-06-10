@@ -16,7 +16,7 @@ const SERVICES = [
       "FAQ responses",
       "Lead summaries to owner",
     ],
-    cta: "Call 305-469-3585 to request a demo",
+    cta: "Call 954-908-9619 to request a demo",
     anchor: "#ai-receptionist",
   },
   {
@@ -32,7 +32,7 @@ const SERVICES = [
       "Gallery & testimonial sections",
       "SEO-ready structure",
     ],
-    cta: "Call 305-469-3585 to build your website",
+    cta: "Call 954-908-9619 to build your website",
     anchor: "#websites",
   },
   {
@@ -48,7 +48,7 @@ const SERVICES = [
       "Before-and-after content",
       "Consistent online presence",
     ],
-    cta: "Call 305-469-3585 to grow your presence",
+    cta: "Call 954-908-9619 to grow your presence",
     anchor: "#social-media",
   },
 ];
@@ -105,7 +105,7 @@ export const ServicesOverview = () => {
 
                 <div className="relative mt-7 pt-5 border-t border-white/[0.05] flex items-center justify-between">
                   <a
-                    href="tel:3054693585"
+                    href="tel:9549089619"
                     data-testid={`service-cta-${s.id}`}
                     className="text-[13px] text-white inline-flex items-center gap-2 group/btn"
                   >

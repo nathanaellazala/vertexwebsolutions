@@ -57,15 +57,15 @@ export const Navbar = () => {
 
           <div className="flex items-center gap-2">
             <a
-              href="tel:3054693585"
+              href="tel:9549089619"
               data-testid="nav-cta-call"
               className="hidden sm:inline-flex items-center gap-2 btn-primary text-[13px] py-2.5 px-4"
             >
               <Phone size={14} strokeWidth={2.5} />
-              <span>305-469-3585</span>
+              <span>954-908-9619</span>
             </a>
             <a
-              href="tel:3054693585"
+              href="tel:9549089619"
               data-testid="nav-cta-call-mobile"
               className="sm:hidden inline-flex items-center justify-center w-10 h-10 rounded-full btn-primary"
               aria-label="Call Vertex"

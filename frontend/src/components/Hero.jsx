@@ -240,12 +240,12 @@ export const Hero = () => {
             className="mt-9 flex flex-col sm:flex-row items-start sm:items-center gap-3"
           >
             <a
-              href="tel:3054693585"
+              href="tel:9549089619"
               data-testid="hero-cta-call"
               className="btn-primary inline-flex items-center gap-2 text-[14px]"
             >
               <Phone size={15} strokeWidth={2.5} />
-              Call 305-469-3585
+              Call 954-908-9619
             </a>
             <a
               href="#services"

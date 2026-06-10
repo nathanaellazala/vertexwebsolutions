@@ -98,15 +98,15 @@ export const InteractiveDemo = () => {
 
               <div className="mt-8 pt-6 border-t border-white/[0.05]">
                 <a
-                  href="tel:3054693585"
+                  href="tel:9549089619"
                   data-testid="demo-cta-call"
                   className="btn-primary inline-flex items-center gap-2 text-[13px]"
                 >
                   <Phone size={14} strokeWidth={2.5} />
-                  Call 305-469-3585
+                  Call 954-908-9619
                 </a>
                 <a
-                  href="tel:3054693585"
+                  href="tel:9549089619"
                   data-testid="demo-cta-tap"
                   className="sm:hidden mt-3 btn-secondary w-full justify-center inline-flex items-center gap-2 text-[13px]"
                 >

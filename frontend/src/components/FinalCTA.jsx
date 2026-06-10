@@ -95,12 +95,12 @@ export const FinalCTA = () => {
 
         <Reveal delay={0.15}>
           <a
-            href="tel:3054693585"
+            href="tel:9549089619"
             data-testid="final-cta-call"
             className="mt-10 inline-flex items-center gap-2.5 btn-primary text-[15px] sm:text-[16px] py-4 px-7"
           >
             <Phone size={16} strokeWidth={2.5} />
-            Call 305-469-3585
+            Call 954-908-9619
           </a>
         </Reveal>
 
