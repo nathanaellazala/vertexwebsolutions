@@ -14,69 +14,36 @@ import Reveal from "./Reveal";
  */
 const PROJECTS = [
   {
-    id: "crispclean",
-    client: "CrispClean",
+    id: "supafresh",
+    client: "Supa Fresh Pressure Washing",
     category: "Pressure Washing",
     year: "2026",
     summary:
-      "Mobile-first lead capture site with quote-flow, gallery, and click-to-call. Doubled inbound inquiries within the first month.",
+      "High-conversion website for a Florida pressure washing crew — service pages, gallery of before-and-after work, click-to-call hero, and quote request flow.",
     tags: ["Website", "Lead Capture", "Mobile"],
-    url: "#",
+    url: "https://supafreshpw.com",
     accent: "from-cyan-500/30 to-blue-500/10",
   },
   {
-    id: "vertex-detail",
-    client: "Vertex Detail",
-    category: "Mobile Detailing",
+    id: "cheftallys",
+    client: "Chef Tally's",
+    category: "Catering & Private Chef",
     year: "2026",
     summary:
-      "Booking-focused site with service grid, before-and-after gallery, and AI receptionist handling after-hours quotes.",
-    tags: ["Website", "AI Receptionist"],
-    url: "#",
-    accent: "from-blue-500/30 to-cyan-500/10",
-  },
-  {
-    id: "lumen-spa",
-    client: "Lumen Med Spa",
-    category: "Med Spa",
-    year: "2026",
-    summary:
-      "Premium brand presence with treatment menu, membership tiers, and social campaign assets for paid traffic.",
-    tags: ["Website", "Social Media"],
-    url: "#",
-    accent: "from-fuchsia-500/25 to-cyan-500/10",
-  },
-  {
-    id: "harbor-eats",
-    client: "Harbor Eats",
-    category: "Food Truck",
-    year: "2026",
-    summary:
-      "Daily-location map, catering inquiry form, menu page, and Instagram-ready promo graphics.",
-    tags: ["Website", "Social Media"],
-    url: "#",
-    accent: "from-emerald-400/25 to-cyan-500/10",
-  },
-  {
-    id: "atlas-grounds",
-    client: "Atlas Grounds",
-    category: "Landscaping",
-    year: "2026",
-    summary:
-      "Seasonal service site with project portfolio, online estimate request, and AI call answering for emergency cleanups.",
-    tags: ["Website", "AI Receptionist", "Lead Capture"],
-    url: "#",
+      "Premium private-chef and catering presence with menu sections, event inquiry flow, and a brand-forward visual identity that matches the kitchen.",
+    tags: ["Website", "Lead Capture"],
+    url: "https://cheftallys.com",
     accent: "from-amber-400/25 to-cyan-500/10",
   },
   {
-    id: "northline-hvac",
-    client: "Northline HVAC",
-    category: "HVAC",
+    id: "fivestarcuban",
+    client: "Five Star Cuban Cafe",
+    category: "Restaurant",
     year: "2026",
     summary:
-      "24/7 emergency dispatch presence — fast-loading service pages, click-to-call hero, and overnight AI receptionist.",
-    tags: ["Website", "AI Receptionist"],
-    url: "#",
+      "Restaurant site for an authentic Cuban café — menu, hours, location, and ordering CTAs designed to convert hungry local searchers.",
+    tags: ["Website", "Local SEO"],
+    url: "https://fivestarcubancafe.com",
     accent: "from-rose-400/25 to-cyan-500/10",
   },
 ];
@@ -113,6 +80,8 @@ const ProjectCard = ({ p, i }) => (
   <Reveal delay={(i % 3) * 0.08}>
     <a
       href={p.url}
+      target="_blank"
+      rel="noopener noreferrer"
       data-testid={`portfolio-card-${p.id}`}
       className="group block rounded-2xl glass hover-glow p-5 h-full"
     >
@@ -221,8 +190,8 @@ export const Portfolio = () => {
           {/* stats strip */}
           <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[
-              { k: "Sites shipped", v: "20+" },
-              { k: "Industries served", v: "18" },
+              { k: "Sites shipped", v: "3" },
+              { k: "Industries served", v: "3" },
               { k: "Avg. mobile speed", v: "< 2s" },
               { k: "After-hours capture", v: "24/7" },
             ].map((s) => (
