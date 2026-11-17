@@ -338,3 +338,6 @@ main > section:nth-of-type(n+3) {
     * { @apply border-border; }
     body { @apply bg-background text-foreground; }
 }
+
+/* Clear keyboard focus on navigation and portfolio actions. */
+a:focus-visible, button:focus-visible { outline: 2px solid #a5f3fc; outline-offset: 4px; }

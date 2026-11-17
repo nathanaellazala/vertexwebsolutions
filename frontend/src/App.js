@@ -11,11 +11,11 @@ import WebsiteDeepDive from "./components/WebsiteDeepDive";
 import SocialMediaDeepDive from "./components/SocialMediaDeepDive";
 import IndustriesGrid from "./components/IndustriesGrid";
 import WhyVertex from "./components/WhyVertex";
-import Testimonials from "./components/Testimonials";
 import InteractiveDemo from "./components/InteractiveDemo";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
+import DeveloperPortfolio from "./components/DeveloperPortfolio";
 
 const Landing = () => {
   return (
@@ -32,7 +32,6 @@ const Landing = () => {
         <SocialMediaDeepDive />
         <IndustriesGrid />
         <WhyVertex />
-        <Testimonials />
         <InteractiveDemo />
         <FinalCTA />
       </main>
@@ -48,6 +47,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/developer" element={<DeveloperPortfolio />} />
           <Route path="*" element={<Landing />} />
         </Routes>
       </BrowserRouter>

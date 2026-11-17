@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { label: "Websites", href: "/#websites" },
   { label: "Social Media", href: "/#social-media" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Developer", href: "/developer" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -78,6 +78,8 @@ export const Navbar = () => {
               data-testid="nav-menu-toggle"
               className="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-white/10 text-white"
               aria-label="Toggle menu"
+              aria-expanded={open}
+              aria-controls="mobile-navigation"
             >
               {open ? <X size={18} /> : <Menu size={18} />}
             </button>
@@ -87,6 +89,7 @@ export const Navbar = () => {
         {/* Mobile menu */}
         {open && (
           <div
+            id="mobile-navigation"
             data-testid="nav-mobile-menu"
             className="lg:hidden mt-3 glass-strong rounded-2xl p-3 flex flex-col"
           >

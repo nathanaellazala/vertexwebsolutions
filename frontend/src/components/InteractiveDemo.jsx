@@ -39,7 +39,7 @@ export const InteractiveDemo = () => {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
           align="center"
-          overline="LIVE WALKTHROUGH"
+          overline="ILLUSTRATIVE WALKTHROUGH"
           title={
             <>
               See what Vertex could <span className="text-gradient-cyan">build for your business.</span>
